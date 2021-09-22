@@ -1,0 +1,1729 @@
+{
+	"arguments": [
+		{
+			"argumentID": "WedJun302021151356GMT0400EasternDaylightTime",
+			"name": "apikey",
+			"displayName": "API key",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Secrets",
+			"defaultType": "static.secrets",
+			"_arrayIndex": 0,
+			"tooltip": "enter your project key here"
+		},
+		{
+			"argumentID": "WedJun302021175929GMT0400EasternDaylightTime",
+			"name": "enable_knocking",
+			"displayName": "allow knocking",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"_arrayIndex": 1,
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"staticOptions": [
+				{
+					"id": "true",
+					"name": "true"
+				},
+				{
+					"id": "false",
+					"name": "false"
+				}
+			],
+			"partialValue": "false",
+			"value": "false",
+			"tooltip": "When a user knocks to request access to a meeting, a room owner must be in the room to approve that join request. Options are true or false."
+		},
+		{
+			"argumentID": "WedJun302021180217GMT0400EasternDaylightTime",
+			"name": "enable_screenshare",
+			"displayName": "allow screensharing",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"_arrayIndex": 2,
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"staticOptions": [
+				{
+					"id": "true",
+					"name": "true"
+				},
+				{
+					"id": "false",
+					"name": "false"
+				}
+			],
+			"partialValue": "true",
+			"value": "true",
+			"tooltip": "Enable screensharing, options are true or false"
+		},
+		{
+			"argumentID": "WedJun302021180415GMT0400EasternDaylightTime",
+			"name": "enable_chat",
+			"displayName": "allow chat",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"staticOptions": [
+				{
+					"id": "true",
+					"name": "true"
+				},
+				{
+					"id": "false",
+					"name": "false"
+				}
+			],
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"partialValue": "true",
+			"value": "true",
+			"_arrayIndex": 3,
+			"tooltip": "Enable chat, options are true or false"
+		},
+		{
+			"argumentID": "WedJun302021180737GMT0400EasternDaylightTime",
+			"name": "owner_only_broadcast",
+			"displayName": "allow broadcast",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"_arrayIndex": 4,
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"allowManualEntry": 0,
+			"staticOptions": [
+				{
+					"id": "true",
+					"name": "true"
+				},
+				{
+					"id": "false",
+					"name": "false"
+				}
+			],
+			"partialValue": "false",
+			"value": "false"
+		},
+		{
+			"argumentID": "WedJun302021181540GMT0400EasternDaylightTime",
+			"name": "privacy",
+			"displayName": "privacy",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"_arrayIndex": 5,
+			"tooltip": "set the privacy of the room options are public and private",
+			"staticOptions": [
+				{
+					"id": "public",
+					"name": "public",
+					"_arrayIndex": 0
+				},
+				{
+					"id": "private",
+					"name": "private"
+				}
+			],
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"partialValue": "public",
+			"value": "public"
+		},
+		{
+			"argumentID": "WedJun302021182219GMT0400EasternDaylightTime",
+			"name": "lang",
+			"displayName": "language",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"_arrayIndex": 6,
+			"tooltip": "set the language of the video chat. Reference https://docs.daily.co/reference#room-configuration for available languages",
+			"defaultTypeName": "Text",
+			"defaultType": "static.text",
+			"partialValue": "en",
+			"value": "en"
+		},
+		{
+			"argumentID": "ThuJul012021090713GMT0400EasternDaylightTime",
+			"name": "targetPage",
+			"displayName": "Target Page for Variable (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Pages",
+			"defaultType": "static.pages",
+			"_arrayIndex": 7,
+			"tooltip": "Optional value to set the target page for a variable"
+		},
+		{
+			"argumentID": "ThuJul012021090756GMT0400EasternDaylightTime",
+			"name": "variableName",
+			"displayName": "Variable to Set Response Data (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Text",
+			"defaultType": "static.text",
+			"_arrayIndex": 8,
+			"tooltip": "Optional value to set the response for a variable"
+		}
+	],
+	"settings": {
+		"displayName": "Daily - create a room",
+		"category": "5",
+		"description": "Use this action type to create a video room with Daily's API"
+	},
+	"functions": [
+		{
+			"alias": "httpcall",
+			"id": "LjxSWHoejUybCD2FsA1UMw",
+			"wait": 0,
+			"arguments": [
+				{
+					"inputID": "ThuAug292019112008GMT0500CentralDaylightTime",
+					"name": "url",
+					"_arrayIndex": 0,
+					"type": "static",
+					"value": "/_/HttpCall"
+				},
+				{
+					"inputID": "ThuAug292019112044GMT0500CentralDaylightTime",
+					"name": "headers",
+					"_arrayIndex": 1,
+					"type": "static",
+					"value": {
+						"Content-Type": "application/json"
+					}
+				},
+				{
+					"inputID": "ThuAug292019112048GMT0500CentralDaylightTime",
+					"name": "method",
+					"_arrayIndex": 2,
+					"type": "static",
+					"value": "POST"
+				},
+				{
+					"inputID": "ThuAug292019112058GMT0500CentralDaylightTime",
+					"name": "doNotWaitForCompletion",
+					"_arrayIndex": 3
+				},
+				{
+					"inputID": "ThuAug292019112102GMT0500CentralDaylightTime",
+					"name": "content",
+					"type": "concatenate",
+					"value": [
+						{
+							"type": "static",
+							"value": "{\"url\":\"https://api.daily.co/v1/rooms\",\"headers\":{\"Content-Type\": \"application/json\",\"Authorization\":\"Bearer "
+						},
+						{
+							"type": "config",
+							"value": "apikey"
+						},
+						{
+							"type": "static",
+							"value": "\"},\"method\":\"POST\",\"content\":{\"properties\":{"
+						},
+						{
+							"type": "static",
+							"value": "\"enable_network_ui\":\"false\","
+						},
+						{
+							"type": "static",
+							"value": "\"enable_new_call_ui\":\"true\","
+						},
+						{
+							"type": "static",
+							"value": "\"enable_prejoin_ui\":\"true\","
+						},
+						{
+							"type": "static",
+							"value": "\"enable_knocking\":\""
+						},
+						{
+							"type": "config",
+							"value": "enable_knocking"
+						},
+						{
+							"type": "static",
+							"value": "\", \"enable_screenshare\":\""
+						},
+						{
+							"type": "config",
+							"value": "enable_screenshare"
+						},
+						{
+							"type": "static",
+							"value": "\", \"enable_chat\":\""
+						},
+						{
+							"type": "config",
+							"value": "enable_chat"
+						},
+						{
+							"type": "static",
+							"value": "\", \"owner_only_broadcast\":\""
+						},
+						{
+							"type": "config",
+							"value": "owner_only_broadcast"
+						},
+						{
+							"type": "static",
+							"value": "\", \"lang\":\""
+						},
+						{
+							"type": "config",
+							"value": "lang"
+						},
+						{
+							"type": "static",
+							"value": "\"},\"privacy\":\""
+						},
+						{
+							"type": "config",
+							"value": "privacy"
+						},
+						{
+							"type": "static",
+							"value": "\"}}"
+						}
+					],
+					"_arrayIndex": 4
+				}
+			],
+			"_arrayIndex": 0,
+			"actionTypeID": "M3qQYBAQI0Sv3SQFeDLJrg"
+		},
+		{
+			"alias": "setPageVariable",
+			"id": "HnBfldsXz0WlpU9oMg5GPg",
+			"wait": 1,
+			"arguments": [
+				{
+					"inputID": "ThuAug292019113224GMT0500CentralDaylightTime",
+					"name": "variableName",
+					"_arrayIndex": 0,
+					"type": "config",
+					"value": "variableName"
+				},
+				{
+					"inputID": "ThuAug292019113235GMT0500CentralDaylightTime",
+					"name": "targetPage",
+					"_arrayIndex": 1,
+					"type": "config",
+					"value": "targetPage"
+				},
+				{
+					"inputID": "MonDec022019173728GMT0600CentralStandardTime",
+					"name": "value",
+					"_arrayIndex": 2,
+					"type": "fnctRes",
+					"value": "httpcall.response.content",
+					"path": "content"
+				}
+			],
+			"_arrayIndex": 1,
+			"actionTypeID": "M3qQYBAQI0Sv3SQFeDLJrg"
+		}
+	],
+	"coreType": "0"
+}

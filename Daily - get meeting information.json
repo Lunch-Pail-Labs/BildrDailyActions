@@ -1,0 +1,220 @@
+{
+	"arguments": [
+		{
+			"argumentID": "WedJun302021151356GMT0400EasternDaylightTime",
+			"name": "apikey",
+			"displayName": "api key",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.secrets",
+					"name": "Secrets",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Secrets",
+			"defaultType": "static.secrets",
+			"_arrayIndex": 0
+		},
+		{
+			"argumentID": "ThuJul012021131240GMT0400EasternDaylightTime",
+			"name": "targetPage",
+			"displayName": "Target Page for Variable (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Pages",
+			"defaultType": "static.pages"
+		},
+		{
+			"argumentID": "ThuJul012021131420GMT0400EasternDaylightTime",
+			"name": "variableName",
+			"displayName": "Variable to Set Response Data (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Text",
+			"defaultType": "static.text"
+		}
+	],
+	"settings": {
+		"displayName": "Daily - get meeting information",
+		"category": "5",
+		"description": "Get Meeting Information about all daily rooms"
+	},
+	"functions": [
+		{
+			"alias": "httpcall",
+			"id": "LjxSWHoejUybCD2FsA1UMw",
+			"wait": 0,
+			"arguments": [
+				{
+					"inputID": "ThuAug292019112008GMT0500CentralDaylightTime",
+					"name": "url",
+					"_arrayIndex": 0,
+					"type": "static",
+					"value": "/_/HttpCall"
+				},
+				{
+					"inputID": "ThuAug292019112044GMT0500CentralDaylightTime",
+					"name": "headers",
+					"_arrayIndex": 1,
+					"type": "static",
+					"value": {
+						"Content-Type": "application/json"
+					}
+				},
+				{
+					"inputID": "ThuAug292019112048GMT0500CentralDaylightTime",
+					"name": "method",
+					"_arrayIndex": 2,
+					"type": "static",
+					"value": "POST"
+				},
+				{
+					"inputID": "ThuAug292019112058GMT0500CentralDaylightTime",
+					"name": "doNotWaitForCompletion",
+					"_arrayIndex": 3
+				},
+				{
+					"inputID": "ThuAug292019112102GMT0500CentralDaylightTime",
+					"name": "content",
+					"type": "concatenate",
+					"value": [
+						{
+							"type": "static",
+							"value": "{\"url\":\"https://api.daily.co/v1/meetings\",\"headers\":{\"Content-Type\": \"application/json\",\"Authorization\":\"Bearer "
+						},
+						{
+							"type": "config",
+							"value": "apikey"
+						},
+						{
+							"type": "static",
+							"value": "\"},\"method\":\"GET\"}"
+						}
+					],
+					"_arrayIndex": 4
+				}
+			],
+			"_arrayIndex": 0,
+			"actionTypeID": "IMUxQ4pGakCRjpPcUz68LQ"
+		},
+		{
+			"alias": "setPageVariable",
+			"id": "A84D8Zo5f0ycumpVGZQTNA",
+			"wait": 1,
+			"arguments": [
+				{
+					"inputID": "ThuAug292019113224GMT0500CentralDaylightTime",
+					"name": "variableName",
+					"_arrayIndex": 0,
+					"type": "config",
+					"value": "variableName"
+				},
+				{
+					"inputID": "ThuAug292019113235GMT0500CentralDaylightTime",
+					"name": "targetPage",
+					"_arrayIndex": 1,
+					"type": "config",
+					"value": "targetPage"
+				},
+				{
+					"inputID": "MonDec022019173728GMT0600CentralStandardTime",
+					"name": "value",
+					"_arrayIndex": 2,
+					"type": "fnctRes",
+					"value": "httpcall.response.content",
+					"path": "content"
+				}
+			],
+			"_arrayIndex": 1,
+			"actionTypeID": "IMUxQ4pGakCRjpPcUz68LQ"
+		}
+	],
+	"coreType": "0"
+}

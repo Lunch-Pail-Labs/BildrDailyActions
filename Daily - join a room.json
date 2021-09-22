@@ -1,0 +1,575 @@
+{
+	"arguments": [
+		{
+			"argumentID": "TueJun292021084331GMT0400EasternDaylightTime",
+			"name": "roomURL",
+			"displayName": "Room URL",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.checkbox",
+					"name": "Checkbox",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.dateTime",
+					"name": "Date / Time",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.toggle",
+					"name": "Toggle Switch",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "From Variable",
+			"defaultType": "variable"
+		},
+		{
+			"argumentID": "ThuJul082021160658GMT0400EasternDaylightTime",
+			"name": "roomstyle",
+			"displayName": "Room Style",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.select",
+					"name": "Select",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.textarea",
+					"name": "Text Area",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
+			"staticOptions": [
+				{
+					"id": "center",
+					"name": "center"
+				},
+				{
+					"id": "top right",
+					"name": "top right"
+				},
+				{
+					"id": "bottom right",
+					"name": "bottom right"
+				}
+			],
+			"partialValue": "center",
+			"value": "center"
+		},
+		{
+			"argumentID": "ThuJul082021160926GMT0400EasternDaylightTime",
+			"name": "meetingToken",
+			"displayName": "Meeting Token (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "filterset",
+					"name": "Data Collection",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "currentUserInfo",
+					"name": "Current User Info",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "singleValueFilterset",
+					"name": "Current Record Field Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.actions",
+					"name": "Actions",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.styles",
+					"name": "CSS Style Classes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.filtersets",
+					"name": "Data Collections",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.elements",
+					"name": "Elements",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.fields",
+					"name": "Fields",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.assets",
+					"name": "Media Library",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "static.urlroutes",
+					"name": "URL Page Routes",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				},
+				{
+					"id": "advanced",
+					"name": "Advanced",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "concatenate",
+					"name": "Concatenate",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "array",
+					"name": "JSON Array",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "object",
+					"name": "JSON Object",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "math",
+					"name": "Math",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "request",
+					"name": "Request",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				},
+				{
+					"id": "system",
+					"name": "System",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "advanced"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Text",
+			"defaultType": "static.text"
+		}
+	],
+	"settings": {
+		"displayName": "Daily - join a room",
+		"description": "Join a Daily Room, requires a room url. You can set the room style and meeting token (optional)",
+		"category": "5"
+	},
+	"functions": [
+		{
+			"alias": "joinARoom",
+			"id": "VdtDKDMTSkGclqbSUlsVgQ",
+			"wait": 0,
+			"arguments": [
+				{
+					"inputID": "TueJun292021083944GMT0400EasternDaylightTime",
+					"name": "callframeurl",
+					"_arrayIndex": 0,
+					"type": "config",
+					"value": "roomURL"
+				},
+				{
+					"inputID": "ThuJul082021154820GMT0400EasternDaylightTime",
+					"name": "callframestyle",
+					"_arrayIndex": 1,
+					"type": "config",
+					"value": "roomstyle"
+				},
+				{
+					"inputID": "ThuJul082021160141GMT0400EasternDaylightTime",
+					"name": "meetingtoken",
+					"_arrayIndex": 2,
+					"type": "config",
+					"value": "meetingToken"
+				}
+			],
+			"_arrayIndex": 0,
+			"actionTypeID": "ObHiADZVYkGSpd3Jcu43yw"
+		}
+	]
+}
