@@ -547,7 +547,8 @@
 	"settings": {
 		"displayName": "Daily - create meeting token",
 		"category": "5",
-		"description": "Create meeting tokens"
+		"description": "Create meeting tokens",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{
@@ -659,7 +660,7 @@
 					"name": "value",
 					"_arrayIndex": 2,
 					"type": "fnctRes",
-					"value": "httpcall.response.content",
+					"value": "dailyHttpcall.response.content",
 					"path": "content"
 				}
 			],

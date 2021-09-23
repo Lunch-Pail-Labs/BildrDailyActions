@@ -124,7 +124,8 @@
 	"settings": {
 		"displayName": "Daily - get all rooms",
 		"category": "5",
-		"description": "Get meeting information from all daily rooms"
+		"description": "Get meeting information from all daily rooms",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{
@@ -208,7 +209,7 @@
 					"name": "value",
 					"_arrayIndex": 2,
 					"type": "fnctRes",
-					"value": "httpcall.response.content",
+					"value": "dailyHttpcall.response",
 					"path": "content"
 				}
 			],

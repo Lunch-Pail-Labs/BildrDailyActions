@@ -259,7 +259,8 @@
 	"settings": {
 		"displayName": "Daily - delete a room",
 		"category": "5",
-		"description": "Delete room information"
+		"description": "Delete room information",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{

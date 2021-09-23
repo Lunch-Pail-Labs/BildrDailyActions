@@ -350,7 +350,8 @@
 	"settings": {
 		"displayName": "Daily - get room details",
 		"category": "5",
-		"description": "Get information about a room"
+		"description": "Get information about a room",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{

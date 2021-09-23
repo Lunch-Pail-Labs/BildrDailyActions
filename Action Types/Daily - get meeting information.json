@@ -124,7 +124,8 @@
 	"settings": {
 		"displayName": "Daily - get meeting information",
 		"category": "5",
-		"description": "Get Meeting Information about all daily rooms"
+		"description": "Get Meeting Information about all daily rooms",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{

@@ -330,20 +330,28 @@
 			"defaultType": "static.select",
 			"staticOptions": [
 				{
-					"id": "center",
-					"name": "center"
-				},
-				{
 					"id": "top right",
-					"name": "top right"
+					"name": "top right",
+					"_arrayIndex": 0
 				},
 				{
 					"id": "bottom right",
-					"name": "bottom right"
+					"name": "bottom right",
+					"_arrayIndex": 1
+				},
+				{
+					"id": "fullscreen",
+					"name": "fullscreen",
+					"_arrayIndex": 2
+				},
+				{
+					"id": "audio only",
+					"name": "audio only",
+					"_arrayIndex": 3
 				}
 			],
-			"partialValue": "center",
-			"value": "center"
+			"partialValue": "fullscreen",
+			"value": "fullscreen"
 		},
 		{
 			"argumentID": "ThuJul082021160926GMT0400EasternDaylightTime",
@@ -538,7 +546,8 @@
 	"settings": {
 		"displayName": "Daily - join a room",
 		"description": "Join a Daily Room, requires a room url. You can set the room style and meeting token (optional)",
-		"category": "5"
+		"category": "5",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{

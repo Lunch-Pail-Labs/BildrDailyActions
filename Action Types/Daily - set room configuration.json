@@ -1470,7 +1470,8 @@
 	"settings": {
 		"displayName": "Daily - set room configuration",
 		"category": "5",
-		"description": "update a room's details"
+		"description": "update a room's details",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{

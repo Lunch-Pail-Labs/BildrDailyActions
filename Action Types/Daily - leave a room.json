@@ -3,7 +3,8 @@
 	"settings": {
 		"displayName": "Daily - leave a room ",
 		"description": "Join a Daily Room, requires a room url. You can set the room style and meeting token (optional)",
-		"category": "5"
+		"category": "5",
+		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
 		{
