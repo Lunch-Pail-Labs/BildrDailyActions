@@ -280,7 +280,8 @@
 			],
 			"partialValue": "false",
 			"value": "false",
-			"tooltip": "When a user knocks to request access to a meeting, a room owner must be in the room to approve that join request. Options are true or false."
+			"tooltip": "When a user knocks to request access to a meeting, a room owner must be in the room to approve that join request. Options are true or false.",
+			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180217GMT0400EasternDaylightTime",
@@ -532,7 +533,8 @@
 			],
 			"partialValue": "true",
 			"value": "true",
-			"tooltip": "Enable screensharing, options are true or false"
+			"tooltip": "Enable screensharing, options are true or false",
+			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180415GMT0400EasternDaylightTime",
@@ -777,7 +779,8 @@
 			"partialValue": "true",
 			"value": "true",
 			"_arrayIndex": 3,
-			"tooltip": "Enable chat, options are true or false"
+			"tooltip": "Enable chat, options are true or false",
+			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180737GMT0400EasternDaylightTime",
@@ -980,7 +983,8 @@
 				}
 			],
 			"partialValue": "false",
-			"value": "false"
+			"value": "false",
+			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021181540GMT0400EasternDaylightTime",
@@ -1233,7 +1237,8 @@
 			"defaultTypeName": "Select",
 			"defaultType": "static.select",
 			"partialValue": "public",
-			"value": "public"
+			"value": "public",
+			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021182219GMT0400EasternDaylightTime",
@@ -1340,125 +1345,6 @@
 					"selected": 1,
 					"label": 0,
 					"parentLabel": "staticValue"
-				},
-				{
-					"id": "static.textarea",
-					"name": "Text Area",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "staticValue"
-				},
-				{
-					"id": "static.toggle",
-					"name": "Toggle Switch",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "staticValue"
-				},
-				{
-					"id": "projectStructure",
-					"name": "Project Structure",
-					"selected": "1",
-					"label": 1,
-					"parentLabel": ""
-				},
-				{
-					"id": "static.actions",
-					"name": "Actions",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.styles",
-					"name": "CSS Style Classes",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.filtersets",
-					"name": "Data Collections",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.elements",
-					"name": "Elements",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.fields",
-					"name": "Fields",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.assets",
-					"name": "Media Library",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "static.pages",
-					"name": "Pages",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				},
-				{
-					"id": "advanced",
-					"name": "Advanced",
-					"selected": "1",
-					"label": 1,
-					"parentLabel": ""
-				},
-				{
-					"id": "concatenate",
-					"name": "Concatenate",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
-				},
-				{
-					"id": "array",
-					"name": "JSON Array",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
-				},
-				{
-					"id": "object",
-					"name": "JSON Object",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
-				},
-				{
-					"id": "math",
-					"name": "Math",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
-				},
-				{
-					"id": "request",
-					"name": "Request",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
-				},
-				{
-					"id": "system",
-					"name": "System",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "advanced"
 				}
 			],
 			"actionsOnlyAllowCurrentPage": 1,
@@ -1469,36 +1355,6 @@
 			"defaultType": "static.text",
 			"partialValue": "en",
 			"value": "en"
-		},
-		{
-			"argumentID": "ThuJul012021090713GMT0400EasternDaylightTime",
-			"name": "targetPage",
-			"displayName": "Target Page for Variable (optional)",
-			"thisIsAVariableName": 0,
-			"includeInputPath": 0,
-			"hideTypeInput": "1",
-			"limitTypes": [
-				{
-					"id": "projectStructure",
-					"name": "Project Structure",
-					"selected": "1",
-					"label": 1,
-					"parentLabel": ""
-				},
-				{
-					"id": "static.pages",
-					"name": "Pages",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "projectStructure"
-				}
-			],
-			"actionsOnlyAllowCurrentPage": 1,
-			"elementsOnlyAllowCurrentPage": 1,
-			"defaultTypeName": "Pages",
-			"defaultType": "static.pages",
-			"_arrayIndex": 7,
-			"tooltip": "Optional value to set the target page for a variable"
 		},
 		{
 			"argumentID": "ThuJul012021090756GMT0400EasternDaylightTime",
@@ -1530,20 +1386,6 @@
 					"parentLabel": "basic"
 				},
 				{
-					"id": "data",
-					"name": "Data",
-					"selected": "1",
-					"label": 1,
-					"parentLabel": ""
-				},
-				{
-					"id": "merge",
-					"name": "Merge",
-					"selected": 1,
-					"label": 0,
-					"parentLabel": "data"
-				},
-				{
 					"id": "staticValue",
 					"name": "Static Value",
 					"selected": "1",
@@ -1562,12 +1404,43 @@
 			"elementsOnlyAllowCurrentPage": 1,
 			"defaultTypeName": "Text",
 			"defaultType": "static.text",
-			"_arrayIndex": 8,
-			"tooltip": "Optional value to set the response for a variable"
+			"_arrayIndex": 7,
+			"tooltip": "Optional value to set the response for a variable",
+			"partialValue": "",
+			"value": "",
+			"defaultOpen": 0
+		},
+		{
+			"argumentID": "WedSep222021211503GMT0400EasternDaylightTime",
+			"name": "targetPage",
+			"displayName": "TargetPageforVariable (Optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Pages",
+			"defaultType": "static.pages"
 		}
 	],
 	"settings": {
-		"displayName": "Daily - create a room",
+		"displayName": "Daily - create a room ",
 		"category": "5",
 		"description": "Use this action type to create a video room with Daily's API"
 	},

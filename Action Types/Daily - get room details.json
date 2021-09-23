@@ -3,7 +3,7 @@
 		{
 			"argumentID": "WedJun302021151356GMT0400EasternDaylightTime",
 			"name": "apikey",
-			"displayName": "api key",
+			"displayName": "key",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "1",
@@ -254,17 +254,108 @@
 			"defaultType": "static.text",
 			"_arrayIndex": 1,
 			"tooltip": "enter the room name"
+		},
+		{
+			"argumentID": "ThuJul012021132814GMT0400EasternDaylightTime",
+			"name": "targetPage",
+			"displayName": "Target Page for Variable (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "1",
+			"limitTypes": [
+				{
+					"id": "projectStructure",
+					"name": "Project Structure",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.pages",
+					"name": "Pages",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "projectStructure"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Pages",
+			"defaultType": "static.pages"
+		},
+		{
+			"argumentID": "ThuJul012021132903GMT0400EasternDaylightTime",
+			"name": "variableName",
+			"displayName": "Variable to Set Response Data (optional)",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "data",
+					"name": "Data",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "merge",
+					"name": "Merge",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "data"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"defaultTypeName": "Text",
+			"defaultType": "static.text"
 		}
 	],
 	"settings": {
-		"displayName": "Daily - delete a room",
+		"displayName": "Daily - get room details",
 		"category": "5",
-		"description": "Delete room information"
+		"description": "Get information about a room"
 	},
 	"functions": [
 		{
 			"alias": "httpcall",
-			"id": "LjxSWHoejUybCD2FsA1UMw",
+			"id": "DgA7NxnkUEu3B4sOS4X3LA",
 			"wait": 0,
 			"arguments": [
 				{
@@ -318,14 +409,45 @@
 						},
 						{
 							"type": "static",
-							"value": "\"},\"method\":\"delete\"}"
+							"value": "\"},\"method\":\"get\"}"
 						}
 					],
 					"_arrayIndex": 4
 				}
 			],
 			"_arrayIndex": 0,
-			"actionTypeID": "KulT77jO20SkyAdxQjnvKA"
+			"actionTypeID": "z3tzZIPThE2OMbeP9Qty1A"
+		},
+		{
+			"alias": "setPageVariable",
+			"id": "HnBfldsXz0WlpU9oMg5GPg",
+			"wait": 1,
+			"arguments": [
+				{
+					"inputID": "ThuAug292019113224GMT0500CentralDaylightTime",
+					"name": "variableName",
+					"_arrayIndex": 0,
+					"type": "config",
+					"value": "variableName"
+				},
+				{
+					"inputID": "ThuAug292019113235GMT0500CentralDaylightTime",
+					"name": "targetPage",
+					"_arrayIndex": 1,
+					"type": "config",
+					"value": "targetPage"
+				},
+				{
+					"inputID": "MonDec022019173728GMT0600CentralStandardTime",
+					"name": "value",
+					"_arrayIndex": 2,
+					"type": "fnctRes",
+					"value": "httpcall.response.content",
+					"path": "content"
+				}
+			],
+			"_arrayIndex": 1,
+			"actionTypeID": "z3tzZIPThE2OMbeP9Qty1A"
 		}
 	],
 	"coreType": "0"
