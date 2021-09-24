@@ -28,12 +28,12 @@
 			"defaultTypeName": "Secrets",
 			"defaultType": "static.secrets",
 			"_arrayIndex": 0,
-			"tooltip": "enter your project key here"
+			"tooltip": "Enter your project secret here. Retrieve your Daily API key at https://dashboard.daily.co/developers."
 		},
 		{
 			"argumentID": "WedJun302021175929GMT0400EasternDaylightTime",
 			"name": "enable_knocking",
-			"displayName": "allow knocking",
+			"displayName": "enable knocking",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -280,13 +280,13 @@
 			],
 			"partialValue": "false",
 			"value": "false",
-			"tooltip": "When a user knocks to request access to a meeting, a room owner must be in the room to approve that join request. Options are true or false.",
+			"tooltip": "Turns on a lobby experience for private rooms. A participant without a corresponding meeting token can request to be admitted to the meeting with a \"knock\", and wait for the meeting owner to admit them. Options are true and false.",
 			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180217GMT0400EasternDaylightTime",
 			"name": "enable_screenshare",
-			"displayName": "allow screensharing",
+			"displayName": "enable screenshare",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -533,13 +533,13 @@
 			],
 			"partialValue": "true",
 			"value": "true",
-			"tooltip": "Enable screensharing, options are true or false",
+			"tooltip": "Determines whether screenshare is enabled. Options are true and false.",
 			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180415GMT0400EasternDaylightTime",
 			"name": "enable_chat",
-			"displayName": "allow chat",
+			"displayName": "enable chat",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -779,13 +779,13 @@
 			"partialValue": "true",
 			"value": "true",
 			"_arrayIndex": 3,
-			"tooltip": "Enable chat, options are true or false",
+			"tooltip": "Determines whether chat is enabled. Options are true and false.",
 			"defaultOpen": 0
 		},
 		{
 			"argumentID": "WedJun302021180737GMT0400EasternDaylightTime",
 			"name": "owner_only_broadcast",
-			"displayName": "allow broadcast",
+			"displayName": "owner only broadcast",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -984,7 +984,8 @@
 			],
 			"partialValue": "false",
 			"value": "false",
-			"defaultOpen": 0
+			"defaultOpen": 0,
+			"tooltip": "Options are true and false. If set to true, only meeting owners are allowed to turn on camera, unmute mic, and share screen. You can configure a meeting owner token with the Daily - create meeting token action."
 		},
 		{
 			"argumentID": "WedJun302021181540GMT0400EasternDaylightTime",
@@ -1222,7 +1223,7 @@
 			"actionsOnlyAllowCurrentPage": 1,
 			"elementsOnlyAllowCurrentPage": 1,
 			"_arrayIndex": 5,
-			"tooltip": "set the privacy of the room options are public and private",
+			"tooltip": "Determines who can access the room.  Options are public and private.",
 			"staticOptions": [
 				{
 					"id": "public",
@@ -1350,16 +1351,78 @@
 			"actionsOnlyAllowCurrentPage": 1,
 			"elementsOnlyAllowCurrentPage": 1,
 			"_arrayIndex": 6,
-			"tooltip": "set the language of the video chat. Reference https://docs.daily.co/reference#room-configuration for available languages",
-			"defaultTypeName": "Text",
-			"defaultType": "static.text",
+			"tooltip": "The default language  for this room. Currently supported languages are de: German, en: English, fi: Finnish,  fr: French, nl: Dutch, pt: Portuguese, pl: Polish, sv: Swedish, es: Spanish, tr: Turkish, it: Italian, ka: Georgian, jp: Japanese, no: Norwegian,  user: Uses the browser's current language and defaults to English if not supported.",
+			"defaultTypeName": "Select",
+			"defaultType": "static.select",
 			"partialValue": "en",
-			"value": "en"
+			"value": "en",
+			"staticOptions": [
+				{
+					"id": "de",
+					"name": "German"
+				},
+				{
+					"id": "en",
+					"name": "English"
+				},
+				{
+					"id": "fi",
+					"name": "Finnish"
+				},
+				{
+					"id": "fr",
+					"name": "French"
+				},
+				{
+					"id": "nl",
+					"name": "Dutch"
+				},
+				{
+					"id": "pt",
+					"name": "Portuguese"
+				},
+				{
+					"id": "pl",
+					"name": "Polish"
+				},
+				{
+					"id": "sv",
+					"name": "Swedish"
+				},
+				{
+					"id": "es",
+					"name": "Spanish"
+				},
+				{
+					"id": "tr",
+					"name": "Turkish"
+				},
+				{
+					"id": "it",
+					"name": "Italian"
+				},
+				{
+					"id": "ka",
+					"name": "Georgian"
+				},
+				{
+					"id": "jp",
+					"name": "Japanese"
+				},
+				{
+					"id": "no",
+					"name": "Norwegian"
+				},
+				{
+					"id": "user",
+					"name": "User's Browser language"
+				}
+			]
 		},
 		{
 			"argumentID": "ThuJul012021090756GMT0400EasternDaylightTime",
 			"name": "variableName",
-			"displayName": "Variable to Set Response Data (optional)",
+			"displayName": "variable to set response data",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -1413,7 +1476,7 @@
 		{
 			"argumentID": "WedSep222021211503GMT0400EasternDaylightTime",
 			"name": "targetPage",
-			"displayName": "TargetPageforVariable (Optional)",
+			"displayName": "targetpageforvariable ",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "1",
@@ -1441,7 +1504,7 @@
 		{
 			"argumentID": "ThuSep232021043655GMT0400EasternDaylightTime",
 			"name": "exp",
-			"displayName": "expires",
+			"displayName": "expires ",
 			"thisIsAVariableName": 0,
 			"includeInputPath": 0,
 			"hideTypeInput": "0",
@@ -1515,19 +1578,83 @@
 					"selected": 1,
 					"label": 0,
 					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				},
+				{
+					"id": "static.text",
+					"name": "Text",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
 				}
 			],
 			"actionsOnlyAllowCurrentPage": 1,
 			"elementsOnlyAllowCurrentPage": 1,
-			"tooltip": "the expiry time",
-			"defaultTypeName": "Date / Time",
-			"defaultType": "static.dateTime"
+			"tooltip": "An optional parameter to specify the time that a meeting will expire. Requires a UNIX timestamp. ",
+			"defaultTypeName": "Number",
+			"defaultType": "static.number"
+		},
+		{
+			"argumentID": "ThuSep232021161617GMT0400EasternDaylightTime",
+			"name": "nbf",
+			"displayName": "not before ",
+			"thisIsAVariableName": 0,
+			"includeInputPath": 0,
+			"hideTypeInput": "0",
+			"limitTypes": [
+				{
+					"id": "basic",
+					"name": "Basic",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "element",
+					"name": "From Element Value",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "variable",
+					"name": "From Variable",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "basic"
+				},
+				{
+					"id": "staticValue",
+					"name": "Static Value",
+					"selected": "1",
+					"label": 1,
+					"parentLabel": ""
+				},
+				{
+					"id": "static.number",
+					"name": "Number",
+					"selected": 1,
+					"label": 0,
+					"parentLabel": "staticValue"
+				}
+			],
+			"actionsOnlyAllowCurrentPage": 1,
+			"elementsOnlyAllowCurrentPage": 1,
+			"tooltip": "An optional parameter. This is a UNIX timestamp (seconds since the epoch.) Users cannot join a meeting in this room before this time.",
+			"defaultTypeName": "Number",
+			"defaultType": "static.number"
 		}
 	],
 	"settings": {
-		"displayName": "Daily - create a room",
+		"displayName": "Daily - create room",
 		"category": "5",
-		"description": "Use this action type to create a video room with Daily's API",
+		"description": "A \"room\" represents a specific video or audio call location and configuration. Use this action to create a new room through Daily's API.Learn more about this API call at https://docs.daily.co/reference#create-room",
 		"actionTypeIcon": "/_/document/Daily Bubble Plugin Icon.png"
 	},
 	"functions": [
@@ -1627,6 +1754,22 @@
 						},
 						{
 							"type": "static",
+							"value": "\", \"nbf\":\""
+						},
+						{
+							"type": "config",
+							"value": "nbf"
+						},
+						{
+							"type": "static",
+							"value": "\", \"exp\":\""
+						},
+						{
+							"type": "config",
+							"value": "exp"
+						},
+						{
+							"type": "static",
 							"value": "\", \"lang\":\""
 						},
 						{
@@ -1681,22 +1824,6 @@
 				}
 			],
 			"_arrayIndex": 1,
-			"actionTypeID": "M3qQYBAQI0Sv3SQFeDLJrg"
-		},
-		{
-			"alias": "transformdatetounix",
-			"id": "XQEcbUYAy0yYuB0yB9Qi1Q",
-			"wait": 0,
-			"arguments": [
-				{
-					"inputID": "WedOct142020174112GMT0300EasternEuropeanSummerTime",
-					"name": "date",
-					"_arrayIndex": 0,
-					"type": "config",
-					"value": "exp"
-				}
-			],
-			"_arrayIndex": 2,
 			"actionTypeID": "M3qQYBAQI0Sv3SQFeDLJrg"
 		}
 	],
